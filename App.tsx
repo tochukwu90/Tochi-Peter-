@@ -7,6 +7,7 @@ import AIPlanner from './components/AIPlanner';
 import Pricing from './components/Pricing';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import ScrollControls from './components/ScrollControls';
 
 const App: React.FC = () => {
   // Navigation Key Functions (Global Keyboard Shortcuts)
@@ -38,8 +39,9 @@ const App: React.FC = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-black overflow-x-hidden">
+    <div className="min-h-screen bg-black overflow-x-hidden relative">
       <Navbar />
+      <ScrollControls />
       <main>
         <section id="hero">
           <Hero />
